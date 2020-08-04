@@ -189,6 +189,12 @@ public class UI {
 		ip4.setBounds(228, 52, 56, 22);
 		panel.add(ip4);
 		
+		JLabel lblNewLabel_1 = new JLabel("/");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBounds(290, 52, 18, 22);
+		panel.add(lblNewLabel_1);
+		
 		frame.setVisible(true);
 	}
 	
