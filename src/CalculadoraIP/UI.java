@@ -51,10 +51,10 @@ public class UI {
 		frame.setContentPane(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Calculadora de IP");
+		JLabel lblNewLabel = new JLabel("Calculadora de IPv4");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
-		lblNewLabel.setBounds(170, 0, 154, 32);
+		lblNewLabel.setBounds(163, 0, 167, 32);
 		panel.add(lblNewLabel);
 		
 		JLabel lblip = new JLabel("Ingrese IP:");
@@ -129,7 +129,7 @@ public class UI {
 		panel.add(separator);
 		
 		rB = new JLabel("...");
-		rB.setBounds(208, 113, 161, 16);
+		rB.setBounds(208, 113, 116, 16);
 		panel.add(rB);
 		
 		JButton calcularBtn = new JButton("Calcular");
@@ -142,11 +142,11 @@ public class UI {
 		panel.add(calcularBtn);
 		
 		rC = new JLabel("...");
-		rC.setBounds(208, 141, 161, 16);
+		rC.setBounds(208, 141, 116, 16);
 		panel.add(rC);
 		
 		rD = new JLabel("...");
-		rD.setBounds(208, 171, 208, 16);
+		rD.setBounds(208, 171, 161, 16);
 		panel.add(rD);
 		
 		rE = new JLabel("...");
@@ -194,6 +194,28 @@ public class UI {
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_1.setBounds(290, 52, 18, 22);
 		panel.add(lblNewLabel_1);
+		
+		JButton btnRecomendHost = new JButton("Recomend Host");
+		btnRecomendHost.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				UIhost uih = new UIhost();
+				frame.setContentPane(uih.getJPanel());
+				frame.revalidate();
+			}
+		});
+		btnRecomendHost.setBounds(342, 126, 124, 25);
+		panel.add(btnRecomendHost);
+		
+		JButton btnIpv = new JButton("Ipv6");
+		btnIpv.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				UIipv6 ui6 = new UIipv6();
+				frame.setContentPane(ui6.getJPanel());
+				frame.revalidate();
+			}
+		});
+		btnIpv.setBounds(381, 164, 85, 25);
+		panel.add(btnIpv);
 		
 		frame.setVisible(true);
 	}

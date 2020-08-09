@@ -8,10 +8,7 @@ public class main {
 		
 		UI ui = new UI();
 		
-	
-				
-	
-		
+
 	    //DB db = DB.getInstances();
 	    
 		//Object [] obj = {"holis", "holis", "holis", "holis", "holis", "holis", "holis", "holis", "holis"};
